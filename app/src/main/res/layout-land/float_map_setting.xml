@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/float_view"
+    >
+    <LinearLayout
+        android:id="@+id/float_map_setting_linear"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/float_map_setting_cancel"
+            />
+        <View
+            android:layout_width="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/float_map_setting_confirm"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_above="@id/float_map_setting_linear"
+        android:id="@+id/float_map_setting_view"
+        android:layout_height="1dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/setting_map"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/float_map_setting_view"
+        android:layout_alignParentTop="true"
+        >
+
+    </FrameLayout>
+
+
+</RelativeLayout>

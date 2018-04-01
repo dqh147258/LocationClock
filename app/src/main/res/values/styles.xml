@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MapButton">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/radio_button</item>
+    </style>
+    <style
+        name="common_dialog" parent="@android:style/Theme.Dialog"
+        >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MapButton.Long"
+        parent="@style/MapButton">
+        <item name="android:layout_width">110dp</item>
+    </style>
+    <style name="MapButton.Long.Button"
+        parent="@style/MapButton.Long"
+        >
+        <item name="android:background">@drawable/map_button</item>
+    </style>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yxf.locationclock.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:id="@+id/activity_main_fragment"
+        >
+
+    </FrameLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/radio"
+        >
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/radio_map"
+            android:background="@drawable/radio_button"
+            android:text="地图"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:textSize="20sp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button"
+            android:text="闹钟"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/radio_clock"/>
+    </RadioGroup>
+</LinearLayout>

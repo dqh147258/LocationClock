@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:id="@+id/float_message"
+    android:background="@drawable/float_view"
+    android:layout_height="250dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="30sp"
+        android:padding="10sp"
+        android:gravity="center"
+        android:text="备注"
+        android:id="@+id/float_message_comment"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:text="地址"
+        android:id="@+id/float_message_address"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="确定"
+            android:textSize="25sp"
+            android:id="@+id/float_message_confirm"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/close_button"
+            />
+    </RelativeLayout>
+</LinearLayout>
